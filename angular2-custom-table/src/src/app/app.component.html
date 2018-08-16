@@ -1,0 +1,14 @@
+<div class="container">
+	<fieldset>
+		<legend>
+			<h4><strong>Json-Data</strong></h4>
+		</legend>
+		<div class="form-group pink-textarea">
+        <textarea  #textbox type="text" id="jsonArea" (change)="changeContent(textbox.value)" class="form-control" rows="16">{{content | json}}</textarea>
+        <label for="jsonArea">You Can Modify Above  <code>:Json</code> State & Click OutSide Of Text-Area.
+        </label>
+		</div>
+</fieldset>
+
+<custom-table [content]="content"></custom-table>
+</div>
